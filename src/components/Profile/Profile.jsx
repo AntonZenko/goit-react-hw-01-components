@@ -1,7 +1,7 @@
 import Proptypes from 'prop-types';
-import css from './Profile.module.css';
 import Description from './Description';
 import Stats from './Stats';
+import { ProfileCard } from './Profile.styled';
 
 const Profile = ({
   avatar = 'https://cdn-icons-png.flaticon.com/512/1077/1077012.png',
@@ -11,7 +11,7 @@ const Profile = ({
   stats,
 }) => {
   return (
-    <div className={css.profile}>
+    <ProfileCard>
       <Description
         avatar={avatar}
         username={username}
@@ -19,7 +19,7 @@ const Profile = ({
         location={location}
       />
       <Stats stats={stats} />
-    </div>
+    </ProfileCard>
   );
 };
 
