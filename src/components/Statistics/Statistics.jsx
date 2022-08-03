@@ -29,6 +29,6 @@ Statistics.prototype = {
   stats: PropTypes.shape({
     label: PropTypes.string,
     percentage: PropTypes.number,
-  }),
+  }).isRequired,
 };
 export default Statistics;
